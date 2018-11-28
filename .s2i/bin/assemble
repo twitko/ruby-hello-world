@@ -40,7 +40,7 @@ if [ -f Gemfile ]; then
   echo "---> Cleaning up unused ruby gems ..."
   bundle clean -V
 fi
-https://github.com/openshift/ruby-hello-world
+
 if ! bundle exec rackup -h &>/dev/null; then
   echo "WARNING: Rubygem Rack is not installed in the present image."
   echo "         Add rack to your Gemfile in order to start the web server."
